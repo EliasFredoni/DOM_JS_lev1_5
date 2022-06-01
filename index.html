@@ -10,11 +10,24 @@
 </head>
 
 <body>
-    <section>
-        <h3> Klickzähler </h3>
-        <button id="clickMe" onclick="myFunction()">Click me: 0</button>
-        <h5>Gute Praxis: kein JavaScript-Code im HTML</h5>
-    </section>
+    <div class="one">
+        <section>
+            <h3> Klickzähler </h3>
+            <button id="clickMe" onclick="myFunction()">Click me: 0</button>
+            <h5>Gute Praxis: kein JavaScript-Code im HTML</h5>
+        </section>
+    </div>
+    <div class="two">
+        <ul id="umschalter">
+            <li onclick="farbschema()" id="grauTaste"></li>
+            <li onclick="farbschema()" id="weissTaste"></li>
+            <li onclick="farbschema()" id="blauTaste"></li>
+            <li onclick="farbschema()" id="gelbTaste"></li>
+        </ul>
+        <h1>Farbschema Umschalter</h1>
+        <p>Versuche auf eine der obigen Farben zu klicken, um die Farben auf dieser Seite zu ändern! </p>
+    </div>
+
     <script src="assets/js/main.js"></script>
 </body>
 
